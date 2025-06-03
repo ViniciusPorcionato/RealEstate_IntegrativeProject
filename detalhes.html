@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Imóvel | Talismã Imóveis</title>
+    <link rel="stylesheet" href="./styles/detalhes.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="content-header">
+        <a href="index.html">
+          <img class="logo-image" src="./assets/images/Logo-Red.svg" alt="Logo da imobiliária" />
+        </a>
+        <nav class="navbar">
+          <a class="link" href="index.html">Início</a>
+          <a class="link" href="imoveis.html">Imovéis</a>
+          <a class="link" href="sobre.html">Sobre nós</a>
+          <a class="link active" href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="property-details">
+      <div class="details-container">
+        <!-- Galeria de Imagens -->
+        <div class="property-gallery">
+          <div class="main-image">
+            <img
+              id="main-property-image"
+              src=""
+              alt="Imagem principal do imóvel"
+            />
+          </div>
+          <div class="thumbnail-container">
+            <!-- Miniaturas serão adicionadas pelo JavaScript -->
+          </div>
+        </div>
+
+        <!-- Informações do Imóvel -->
+        <div class="property-info">
+          <h1 id="property-title">Título do Imóvel</h1>
+          <p class="property-location" id="property-location">Localização</p>
+          <p class="property-price" id="property-price">Preço</p>
+
+          <!-- Características -->
+          <div class="property-features">
+            <div class="feature">
+              <span>🛏️</span>
+              <span id="property-rooms">- Quartos</span>
+            </div>
+            <div class="feature">
+              <span>🚽</span>
+              <span id="property-bathrooms">- Banheiros</span>
+            </div>
+            <div class="feature">
+              <span>📏</span>
+              <span id="property-area">- m²</span>
+            </div>
+            <div class="feature">
+              <span>🚗</span>
+              <span id="property-garage">- Vagas</span>
+            </div>
+          </div>
+
+          <!-- Descrição -->
+          <div class="property-description">
+            <h2>Descrição</h2>
+            <p id="property-description-text">
+              Carregando descrição do imóvel...
+            </p>
+          </div>
+
+          <!-- Detalhes Adicionais -->
+          <div class="property-amenities">
+            <h2>Comodidades</h2>
+            <ul id="property-amenities-list">
+              <!-- Itens serão adicionados pelo JavaScript -->
+            </ul>
+          </div>
+
+          <!-- Botão de Contato -->
+          <button
+            class="contact-button"
+            onclick="window.location.href='contato.html'"
+          >
+            Entrar em Contato
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="./assets/images/Logo-White.svg"
+            alt="Talismã Imóveis"
+            class="footer-logo"
+          />
+        </div>
+
+        <div class="footer-column">
+          <h4>CONTATO</h4>
+          <p>11 9999-9999</p>
+          <p>contato@talismaimoveis.com</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>INFORMAÇÕES</h4>
+          <ul>
+            <li><a href="#">Imóveis</a></li>
+            <li><a href="#">Seguros</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="termos.html">Termos e Condições</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>ENDEREÇO</h4>
+          <p>
+            R. Paulo Nunes Félix, 534 - Parque Sao Rafael<br />São Paulo - SP
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Talismá Imovêis - Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/propertyDetails.js"></script>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+/* Configuração do body */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.content-header {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 11;
+}
+
+.logo-image {
+  width: 150px;
+}
+
+.navbar {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #8d001a;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* Estilos para a página de Termos */
+.terms-header {
+  background-color: #8D001A;
+  padding: 60px 0 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.terms-header-content {
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.terms-title {
+  font-family: Poppins-Bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.terms-subtitle {
+  font-family: Poppins-SemiBold;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+}
+
+/* Imoveis Page Styles */
+.imoveis-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.imoveis-title {
+  font-size: 2rem;
+  font-family: Poppins-SemiBold;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.property-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.property-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.property-title {
+  font-family: Poppins;
+  font-size: 1.25rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.property-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.location {
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.location img {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #8D001A;
+  font-family: Poppins-Bold;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #8D001A;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-family: Poppins;
+}
+
+.card-button:hover {
+  background-color: #49000E;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Existing Footer Styles (ensure these are in your styles.css) */
+.site-footer {
+  background-color: #8d001a;
+  color: #ffffff;
+  padding: 60px 0 20px;
+  font-family: Poppins;
+}
+
+.footer-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+/* Rodapé */
+.site-footer {
+  background-color: #8d001a;
+  color: #ffffff;
+  padding: 60px 0 20px;
+  font-family: Poppins;
+}
+
+.footer-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.footer-brand h3 {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.footer-column h4 {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  width: 85%;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}

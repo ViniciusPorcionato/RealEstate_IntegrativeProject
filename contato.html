@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Talismã Imóveis</title>
+    <link rel="stylesheet" href="./styles/contato.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="content-header">
+        <a href="index.html">
+          <img class="logo-image" src="./assets/images/Logo-Red.svg" alt="Logo da imobiliária" />
+        </a>
+        <nav class="navbar">
+          <a class="link" href="index.html">Início</a>
+          <a class="link" href="imoveis.html">Imovéis</a>
+          <a class="link" href="sobre.html">Sobre nós</a>
+          <a class="link active" href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="contact-container">
+      <h1 class="page-title">Fale Conosco</h1>
+
+      <div class="contact-content">
+        
+        <div class="contact-info">
+          <h2>Informações de Contato</h2>
+          <div class="info-item">
+            <img src="./assets/images/phone.svg" alt="Telefone" />
+            <p><strong>Telefone:</strong> 11 9999-9999</p>
+          </div>
+          <div class="info-item">
+            <img src="./assets/images/email.svg" alt="E-mail" />
+            <p><strong>E-mail:</strong> contato@talismaimoveis.com</p>
+          </div>
+          <div class="info-item">
+            <img src="./assets/images/marker.svg" alt="Endereço" />
+            <p>
+              <strong>Endereço:</strong> R. Paulo Nunes Félix, 534 - Parque Sao
+              Rafael, São Paulo - SP
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="./assets/images/time.svg" alt="Horário" />
+            <p><strong>Horário:</strong> Seg-Sex: 9h às 18h</p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <h2>Envie sua Mensagem</h2>
+
+          <div class="form-group">
+            <label for="name">Nome Completo*</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Assunto*</label>
+            <select id="subject" name="subject" required>
+              <option value="">Selecione...</option>
+              <option value="informacao">Informação sobre imóvel</option>
+              <option value="visita">Agendar visita</option>
+              <option value="duvida">Dúvida geral</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">ENVIAR MENSAGEM</button>
+
+          <div id="formMessage" class="form-message"></div>
+        </form>
+
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.491546262595!2d-46.47528112578473!3d-23.622561363841342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce692c973ba0ed%3A0x62475205499d26d2!2zVGFsaXNtw6MgSW3Ds3ZlaXM!5e0!3m2!1spt-BR!2sbr!4v1747920863194!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="./assets/images/Logo-White.svg"
+            alt="Talismã Imóveis"
+            class="footer-logo"
+          />
+        </div>
+
+        <div class="footer-column">
+          <h4>CONTATO</h4>
+          <p>11 9999-9999</p>
+          <p>contato@talismaimoveis.com</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>INFORMAÇÕES</h4>
+          <ul>
+            <li><a href="">Imóveis</a></li>
+            <li><a href="">Seguros</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="termos.html">Termos e Condições</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>ENDEREÇO</h4>
+          <p>Rua Ali Perto, 42 - Taboão<br />São Paulo - SP</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Talismá Imovêis - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
