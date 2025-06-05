@@ -35,4 +35,3 @@ function scrollCarousel(direction) {
   });
 }
 
-// Função ao clicar no card e abrir detalhes
